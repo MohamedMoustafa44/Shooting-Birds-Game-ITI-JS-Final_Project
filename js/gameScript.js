@@ -202,6 +202,6 @@ window.addEventListener("load", function () {
             document.querySelector("button").onclick = function () {
                 location.reload();
             }
-        }, 1000 * 10);
+        }, 1000 * 60);
     });
 });// End of the game
