@@ -18,7 +18,6 @@ window.addEventListener("load", function () {
         users.push(...JSON.parse(localStorage.getItem("users")));
         for (let i = 0; i < users.length && newUser; i++) {
             if (users[i].name == userName.get("userName")) {
-                console.log(users[i]);
                 newUser = false;
                 lastScore.innerText = users[i].lastScore;
                 currentUser = i;
