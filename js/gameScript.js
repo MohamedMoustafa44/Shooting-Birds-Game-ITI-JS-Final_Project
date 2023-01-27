@@ -16,7 +16,6 @@ window.addEventListener("load", function () {
     let currentUser;
     if (localStorage.length != 0) {
         users.push(...JSON.parse(localStorage.getItem("users")));
-        console.log(users);
         for (let i = 0; i < users.length && newUser; i++) {
             if (users[i].name == userName.get("userName")) {
                 console.log(users[i]);
@@ -177,7 +176,6 @@ window.addEventListener("load", function () {
                     name: userName.get("userName"),
                     lastScore: score,
                 });
-                console.log(users);
             }
             else {
                 users[currentUser].lastScore = score;
